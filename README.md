@@ -2,7 +2,7 @@
 <img alt="demo" width=100 src="https://github.com/frakman1/ContaCam/assets/5826484/9ccb434f-f5f0-4dd5-aa28-5601ecb8de6b"> 
 </p>
 
-- 🎥 The repo is dedicated to the [ContaCam](https://www.contaware.com/contacam.html) app and meant to be a landing page for anyone wishing to discuss ideas, raise issues or share use-cases and configurations with the ContaCam user community.
+- 🎥 This space is dedicated to the [ContaCam](https://www.contaware.com/contacam.html) app and meant to be a landing page for anyone wishing to discuss ideas, raise issues or share use-cases and configurations with the ContaCam user community.
 
 - 🐞 Since the ContaCam app is in maintenance mode only, it is unlikely that any new features will be added soon but there may be patch releases to address minor bugs in the future. With that in mind, feel free to open issues in the [Issues](https://github.com/frakman1/ContaCam/issues) tab.
 
