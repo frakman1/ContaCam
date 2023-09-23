@@ -61,6 +61,8 @@ Around line 451: (change to 6 instead of the default 4)
 $max_container_width = 6 * $min_grid_width; // 12 responsive thumbs: 4 x 3, 3 x 4, 2 x 6 and 1 x 12
 ```
 
-![image](https://github.com/frakman1/ContaCam/assets/5826484/9c404e31-c71b-474d-be8a-a090655b0d0e)
+![image](https://github.com/frakman1/ContaCam/assets/5826484/d4dc156e-4823-4b54-96b1-c91b2fbe2da0)
+
+
 
 
