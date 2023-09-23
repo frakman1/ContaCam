@@ -41,4 +41,26 @@ Similarly for an individual camera's feed:
 http://CONTACAM-PC1:PORT/CAMERA_NAME/push.php?username=xxx&password=xxx
 ```
 
+- To get bigger live snapshot thumbnails in the Web UI, you can change the size in the Camera Advanced Settings page:
+
+![image](https://github.com/frakman1/ContaCam/assets/5826484/e9383693-51b2-4960-a1e7-29b1b6488295)
+
+![image](https://github.com/frakman1/ContaCam/assets/5826484/1d246045-a2a6-4b7a-8aa8-196f163e65f6)
+
+
+
+- To get more animated gifs in the recorded history page of a Camera, you can change the grid size by editing the `summarysnapshot.php` file in `C:\Program Files (x86)\ContaCam\microapache\htdocs`
+
+Around line 60: (change to 42 instead of the default 12)
+```php
+// Max files per page, pages count and page offset
+$max_per_page = 42
+```
+Around line 451: (change to 6 instead of the default 4)
+```php
+$max_container_width = 6 * $min_grid_width; // 12 responsive thumbs: 4 x 3, 3 x 4, 2 x 6 and 1 x 12
+```
+
+![image](https://github.com/frakman1/ContaCam/assets/5826484/9c404e31-c71b-474d-be8a-a090655b0d0e)
+
 
