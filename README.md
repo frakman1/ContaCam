@@ -21,23 +21,15 @@
 <h1 align="center">Tips and Tricks</h1>
 </p>
 
-To increase the Web UI session timeout and avoid logging in all the time, change a couple of PHP parameters as described [here](https://www.contaware.com/manual-faqs/21-05-contacam-networking/119-increase-web-interface-session-timeout.html)
+Here are a few tweaks that I make to the app to make it more functional. 
+If you have any tips you'd like to share, feel free to add them in the [Discussions](https://github.com/frakman1/ContaCam/discussions) page and I will add it to this list.
 
- ---
- 
-  To troubleshoot any issues, look at the ContaCam log file (found under Settings -> View Log File)
-```bash
-C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\log.txt
-```
- 
-Also check the micro apache (`mapache.exe`) web server's log files for issues with starting the webserver. Those are stored in the same folder:
-```bash
-C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\httpd_log.txt
-```
+--- 
+To increase the Web UI session timeout and avoid logging in all the time, change a couple of PHP parameters as described [here](https://www.contaware.com/manual-faqs/21-05-contacam-networking/119-increase-web-interface-session-timeout.html)
 
 ---
 
-To get a direct, no-login URL to your Web UI, use a URL in this form (remember to [URL-encode](https://www.urlencoder.org/) any special characters in your password):
+ To get a direct, no-login URL to your Web UI, use a URL in this form (remember to [URL-encode](https://www.urlencoder.org/) any special characters in your password):
 
 ```bash
 http://CONTACAM-PC1:PORT/?username=xxx&password=xxx
@@ -47,6 +39,18 @@ Similarly for an individual camera's feed:
 
 ```bash
 http://CONTACAM-PC1:PORT/CAMERA_NAME/push.php?username=xxx&password=xxx
+```
+
+---
+
+  To troubleshoot any issues, look at the ContaCam log file (found under Settings -> View Log File)
+```bash
+C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\log.txt
+```
+ 
+Also check the micro apache (`mapache.exe`) web server's log files for issues with starting the webserver. Those are stored in the same folder:
+```bash
+C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\httpd_log.txt
 ```
 
 ---
