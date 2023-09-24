@@ -16,20 +16,28 @@
 
 
 ---
-### Tips and Tricks
-- To increase the Web UI session timeout and avoid logging in all the time, change a couple of PHP parameters as described [here](https://www.contaware.com/manual-faqs/21-05-contacam-networking/119-increase-web-interface-session-timeout.html)
+
+<p> 
+<h1 align="center">Tips and Tricks</h1>
+</p>
+
+To increase the Web UI session timeout and avoid logging in all the time, change a couple of PHP parameters as described [here](https://www.contaware.com/manual-faqs/21-05-contacam-networking/119-increase-web-interface-session-timeout.html)
+
+ ---
  
-- To troubleshoot any issues, look at the ContaCam log file (found under Settings -> View Log File)
+  To troubleshoot any issues, look at the ContaCam log file (found under Settings -> View Log File)
 ```bash
 C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\log.txt
 ```
  
-- Also check the micro apache (`mapache.exe`) web server's log files for issues with starting the webserver. Those are stored in the same folder:
+Also check the micro apache (`mapache.exe`) web server's log files for issues with starting the webserver. Those are stored in the same folder:
 ```bash
 C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\httpd_log.txt
 ```
 
-- To get a direct, no-login URL to your Web UI, use a URL in this form (remember to [URL-encode](https://www.urlencoder.org/) any special characters in your password):
+---
+
+To get a direct, no-login URL to your Web UI, use a URL in this form (remember to [URL-encode](https://www.urlencoder.org/) any special characters in your password):
 
 ```bash
 http://CONTACAM-PC1:PORT/?username=xxx&password=xxx
@@ -41,15 +49,17 @@ Similarly for an individual camera's feed:
 http://CONTACAM-PC1:PORT/CAMERA_NAME/push.php?username=xxx&password=xxx
 ```
 
-- To get bigger live snapshot thumbnails in the Web UI, you can change the size in the Camera Advanced Settings page:
+---
+
+To get bigger live snapshot thumbnails in the Web UI, you can change the size in the Camera Advanced Settings page:
 
 ![image](https://github.com/frakman1/ContaCam/assets/5826484/e9383693-51b2-4960-a1e7-29b1b6488295)
 
 ![image](https://github.com/frakman1/ContaCam/assets/5826484/1d246045-a2a6-4b7a-8aa8-196f163e65f6)
 
+---
 
-
-- To get more animated gifs in the recorded history page of a Camera, you can change the grid size by editing the `summarysnapshot.php` file in `C:\Program Files (x86)\ContaCam\microapache\htdocs`
+To get more animated gifs in the recorded history page of a Camera, you can change the grid size by editing the `summarysnapshot.php` file in `C:\Program Files (x86)\ContaCam\microapache\htdocs`
 
 Around line 60: (change to 42 instead of the default 12)
 ```php
