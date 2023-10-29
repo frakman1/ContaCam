@@ -23,9 +23,14 @@
 
 Here are a few tweaks that I make to the app to make it more functional. 
 If you have any tips you'd like to share, feel free to add them in the [Discussions](https://github.com/frakman1/ContaCam/discussions) page and I will add it to this list.
+<p>&nbsp;</p>
 
 --- 
 To increase the Web UI session timeout and avoid logging in all the time, change a couple of PHP parameters as described [here](https://www.contaware.com/manual-faqs/21-05-contacam-networking/119-increase-web-interface-session-timeout.html)
+
+---
+
+<p>&nbsp;</p>
 
 ---
 
@@ -40,6 +45,9 @@ Similarly for an individual camera's feed:
 ```bash
 http://CONTACAM-PC1:PORT/CAMERA_NAME/push.php?username=xxx&password=xxx
 ```
+---
+
+<p>&nbsp;</p>
 
 ---
 
@@ -52,6 +60,9 @@ Also check the micro apache (`mapache.exe`) web server's log files for issues wi
 ```bash
 C:\Users\USERNAME\AppData\Roaming\Contaware\ContaCam\httpd_log.txt
 ```
+---
+
+<p>&nbsp;</p>
 
 ---
 
@@ -60,6 +71,10 @@ To get bigger live snapshot thumbnails in the Web UI, you can change the size in
 ![image](https://github.com/frakman1/ContaCam/assets/5826484/e9383693-51b2-4960-a1e7-29b1b6488295)
 
 ![image](https://github.com/frakman1/ContaCam/assets/5826484/1d246045-a2a6-4b7a-8aa8-196f163e65f6)
+
+---
+
+<p>&nbsp;</p>
 
 ---
 
@@ -77,6 +92,28 @@ $max_container_width = 6 * $min_grid_width; // 12 responsive thumbs: 4 x 3, 3 x 
 
 ![image](https://github.com/frakman1/ContaCam/assets/5826484/d4dc156e-4823-4b54-96b1-c91b2fbe2da0)
 
+---
 
+<p>&nbsp;</p>
 
+---
+
+In ContaCam's FAQ, there is a [page](https://www.contaware.com/manual-faqs/20-06-contacam-advanced-tasks/98-externally-control.html) that describes turning on/off multiple cameras via the command line using each camera's `.bat` file located in its corresponding folder. This is useful if you want to stop excessive network traffic or CPU usage temporarily.
+
+For example you'd make a new `.bat` file that calls all those individual cameras `.bat` files like this:
+
+```batch
+@echo off
+call "C:\ContaCam\My Camera 1\CAMERA.bat" off
+call "C:\ContaCam\My Camera 2\CAMERA.bat" off
+call "C:\ContaCam\My Camera 3\CAMERA.bat" off
+```
+However, each camera has a built in delay of about 3 or 4 seconds that can get annoying to wait or have to press the keyboard to bypass.
+Instead, you can make a `.bat` file (for example `turn_all_cameras_off.bat`) that calls each camera's corresponding `.bat` file in a new window (in parallel) so it keeps going without any delay like this:
+
+```batch
+start cmd.exe /c "C:\ContaCam\My Camera 1\CAMERA.bat" off
+start cmd.exe /c "C:\ContaCam\My Camera 2\CAMERA.bat" off
+start cmd.exe /c "C:\ContaCam\My Camera 3\CAMERA.bat" off
+```
 
