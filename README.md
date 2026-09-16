@@ -6,7 +6,7 @@
 ---
 
 
-- 🎥 This space is dedicated to fans of the [ContaCam](https://www.contaware.com/contacam.html) app and meant to be a landing page for anyone wishing to discuss ideas, raise issues or share use-cases and configurations with the ContaCam user community.
+- 🎥 This space is dedicated to fans of the [ContaCam](https://www.contaware.com/software/contacam.html) app and meant to be a landing page for anyone wishing to discuss ideas, raise issues or share use-cases and configurations with the ContaCam user community.
 
 - 🐞 The ContaCam developer is right now on a tight schedule, for that reason, the app is temporarily in maintenance mode. It is unlikely that any new features will be added soon, but there may be patch releases to address minor bugs in the future. With that in mind, feel free to open issues in the [Issues](https://github.com/frakman1/ContaCam/issues) tab but don't expect much activity or resolution.
 
